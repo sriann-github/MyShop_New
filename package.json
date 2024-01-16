@@ -1,0 +1,11 @@
+{
+  "name": "MyShop24",
+  "packageManager": "yarn@4.0.2",
+  "private": true,
+  "dependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "scripts": {
+    "start": "node backend/server.js"
+  }
+}
