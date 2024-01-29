@@ -1,6 +1,5 @@
 const Products = [  
   {
-    _id: '1',
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/kal/airpods.jpg',
     description:
@@ -13,7 +12,6 @@ const Products = [
     numReviews: 12,
   },
   {
-    _id: '2',
     name: 'iPhone 11 Pro 256GB Memory',
     image: '/images/kal/airpods.jpg',
     description:
@@ -26,7 +24,6 @@ const Products = [
     numReviews: 8,
   },
   {
-    _id: '3',
     name: 'Cannon EOS 80D DSLR Camera',
     image: '/images/kal/camera.jpg',
     description:
@@ -39,7 +36,6 @@ const Products = [
     numReviews: 12,
   },
   {
-    id: '4',
     name: 'Sony Playstation 4 Pro White Version',
     image: '/images/kal/airpods.jpg',
     description:
@@ -52,7 +48,6 @@ const Products = [
     numReviews: 12,
   },  
   {
-    _id: '5',
     name: 'Amazon Echo Dot 3rd Generation',
     image: '/images/kal/airpods.jpg',
     description:
@@ -65,7 +60,6 @@ const Products = [
     numReviews: 12,
   },
   {
-    _id: '6',
     name: 'Logitech G-Series Gaming Mouse',
     image: '/images/kal/mouse.jpg',
     description:
@@ -79,4 +73,4 @@ const Products = [
   },
 ];
 
-module.exports = Products
+export default Products
