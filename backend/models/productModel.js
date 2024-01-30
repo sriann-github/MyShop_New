@@ -15,8 +15,10 @@ const reviewSchema = mongoose.Schema(
       type: String,
       required: true
     }
-  }
-)
+  }, {
+    timestamps: true
+  })
+
 const productSchema = mongoose.Schema(  
   {
     user:{
@@ -54,7 +56,7 @@ const productSchema = mongoose.Schema(
     required: true,
     default: 0
   },
-  numOfReviews: {
+  numReviews: {
     type: Number,
     required: true,
     default:0
@@ -65,9 +67,8 @@ const productSchema = mongoose.Schema(
     default:0
   },
   reviews: [reviewSchema]
-},
-{
-  timeStamps: true
+}, {
+  timestamps: true
 })
 
 const Product = mongoose.model('products', productSchema)

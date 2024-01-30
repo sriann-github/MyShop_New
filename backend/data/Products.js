@@ -1,4 +1,4 @@
-const Products = [  
+const products = [  
   {
     name: 'Airpods Wireless Bluetooth Headphones',
     image: '/images/kal/airpods.jpg',
@@ -73,4 +73,4 @@ const Products = [
   },
 ];
 
-export default Products
+export default products

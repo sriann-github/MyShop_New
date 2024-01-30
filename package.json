@@ -3,17 +3,25 @@
   "packageManager": "yarn@4.0.2",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.1.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "concurrent": "^0.3.2",
     "concurrently": "^8.2.2",
     "dotenv": "^16.4.1",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^8.1.1",
+    "mongoose-timestamp": "^0.6.0",
     "nodemon": "^3.0.3",
+    "react-redux": "^9.1.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "shop": "concurrently \"npm run server\" \"npm run client\" "
+    "shop": "concurrently \"npm run server\" \"npm run client\" ",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder.js -d"
   }
 }
