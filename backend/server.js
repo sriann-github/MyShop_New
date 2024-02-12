@@ -14,3 +14,5 @@ connectDB()
 app.use('/api/products', productRoutes)
 app.use(errorHandler)
 app.listen(5000, console.log('Server is running on port 5000'))
+
+//Server.js will call into Routes and Routes will call into Controller
